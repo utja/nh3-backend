@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :categories
+      resources :restaurants
       # resources :users, only: %i[create update]
       # post '/login', to: 'auth#create'
       # get '/profile', to: 'users#profile'
