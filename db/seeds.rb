@@ -1,6 +1,6 @@
 require 'csv'
 
-restaurant_data = CSV.read("restaurant_data.csv", {headers: :true, header_converters: :symbol})
+restaurant_data = CSV.read("restaurants_data.csv", {headers: :true, header_converters: :symbol})
 
 all_restaurants = restaurant_data.map do |row|
   row.to_h
